@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  before(:each) { @user = User.new(email: 'user@example.com') }
+  before(:each) { @user = FactoryBot.create(:user) }
 
   subject { @user }
 
@@ -21,7 +21,6 @@ RSpec.describe User, type: :model do
   end
 
   it '.all returns a list of users' do
-    @user.save
     expect(User.all.count).not_to eq 0
   end
 end
