@@ -40,5 +40,6 @@ end
 
 group :test do
   gem 'database_cleaner'
+  gem 'email_spec'
   gem 'launchy'
 end
