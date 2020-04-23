@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
 end
 ruby '2.7.0'
 gem 'bootstrap'
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails'
 gem 'high_voltage'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
